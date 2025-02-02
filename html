@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Job Application Form Widget</h2>   
+    <div class="main">
+        <form>
+            <input type="text" placeholder="First name" required>
+            <input type="text" placeholder="Last name" required>
+            <input type="email" placeholder="E-mail" required>
+            <input type="tel" placeholder="Phone" required>
+
+            <select required>
+            <option>Select Country</option>
+            <option>India</option>
+            </select>
+
+            <select required>
+            <option>State</option>
+            <option>Maharashtra</option>
+            </select>
+
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="Address" required>
+
+            <select required>
+            <option>Choose Desired Position</option>
+            <option>Manager</option>
+             </select>
+
+            <textarea placeholder="Additional info"></textarea>
+
+            <div class="file-upload">
+                <span>Add your CV</span>
+                <input type="file" accept=".pdf,.doc" style="display:none;">
+                <button type="button" class="btn" onclick="document.querySelector('.file-upload input').click();">Browse</button>
+            </div>
+
+            <small>Only: pdf / doc Size: less than 1 Mb</small>
+
+            <br><br>
+
+            <button type="reset" class="btn">Reset</button>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
